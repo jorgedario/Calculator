@@ -14,9 +14,9 @@ namespace Calculator.Core
         {
             return new CalculatorResponse
             {
-                Vat = vat,
-                Net = net,
-                Gross = gross,
+                Vat = Math.Round(vat,2),
+                Net =Math.Round( net,2),
+                Gross = Math.Round(gross,2),
             };
         }
     }
