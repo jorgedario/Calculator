@@ -19,7 +19,7 @@ namespace Calculator.WebApi.Controllers
         }
 
         [HttpPost]
-
+    
         [ProducesResponseType(typeof(Response<CalculatorResponse>), 200)]
      
         public IActionResult Post(CalculatorRequest request)
