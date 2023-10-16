@@ -18,7 +18,7 @@ namespace Calculator.Core
             switch (request.VatTax)
             {
                 case VatTax.Vat10:
-                case VatTax.Vat_13:
+                case VatTax.Vat13:
                 case VatTax.Vat20:
                     var calculator = _calculatorFactory.Create(request.type);
                     return calculator.ExecuteAsync(request);
