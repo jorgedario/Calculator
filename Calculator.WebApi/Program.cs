@@ -8,8 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddTransient<ICalculatorModule, CalculatorModule>();
-builder.Services.AddTransient<ICalculatorFactory, CalculatorFactory>();
+ CalculatorStartUp.UseCalculator(builder.Services);
 builder.Services.AddControllers();
 builder.Services.AddSwaggerGen(c =>
 {
