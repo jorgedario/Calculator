@@ -12,7 +12,7 @@ namespace Calculator.Core
     {
    
 
-        public static void  UseCalculator(this IServiceCollection services)
+        public static void  InitCalculator(this IServiceCollection services)
         {
             services.AddScoped<ICalculatorModule, CalculatorModule>();
             services.AddScoped<ICalculatorFactory, CalculatorFactory>();
